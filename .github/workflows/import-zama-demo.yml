@@ -1,0 +1,32 @@
+name: Import Zama FHE sentiment demo source
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/import-zama-demo.yml
+permissions:
+  contents: write
+concurrency:
+  group: import-zama-demo
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Download official source and models without executing upstream code
+        run: python zama-fhe-sentiment-demo/import_upstream.py
+      - name: Check downloaded Python syntax
+        run: python -m compileall -q zama-fhe-sentiment-demo/upstream
+      - name: Commit source snapshot and manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add zama-fhe-sentiment-demo/upstream zama-fhe-sentiment-demo/SOURCE_MANIFEST.json
+          git commit -m "Import official Zama FHE sentiment demo source and deployment models"
+          git push origin HEAD:main

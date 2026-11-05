@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zama 文本情感分类同态加密演示</title>
+<style>
+body{margin:0;background:#faf8f2;color:#243c33;font:16px/1.7 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:32px 20px}h1{font-size:clamp(26px,5vw,42px);line-height:1.3}a{color:#315c48}header,p,ol{max-width:800px}.note{padding:18px;background:#fff3cd;border-radius:12px}iframe{display:block;width:100%;height:1100px;border:1px solid #d5ddd4;border-radius:16px;background:white;margin:24px 0}footer{font-size:14px}
+</style>
+<main>
+<header><h1>文本情感分类 · 同态加密演示</h1><p>体验在密文上分析文本情感的过程。以下为 Zama 官方 Hugging Face 演示，计算由该第三方服务运行。</p></header>
+<ol><li>生成密钥（Generate the keys）。</li><li>输入示例英文文本，再编码并加密。</li><li>运行密文计算（Run FHE execution）。</li><li>解密结果，查看负面、中性、正面的得分。</li></ol>
+<p class="note">这是教学演示：输入文本、密钥生成和解密操作由远端 Python 演示服务处理，并非全部在你的浏览器中完成。请使用虚构文本，不要提交密码、个人隐私或商业机密。</p>
+<p>如果嵌入内容无法加载，可<a href="https://huggingface.co/spaces/zama-fhe/encrypted_sentiment_analysis" target="_blank" rel="noopener noreferrer">在 Hugging Face 打开原演示 ↗</a>。加载与可用性取决于第三方服务及当前网络。</p>
+<iframe src="https://zama-fhe-encrypted-sentiment-analysis.hf.space" title="Zama 官方同态加密情感分析交互演示" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<footer>这是可用于演示文本情感分类同态加密的教学页面，大家可以参考仓库说明自行部署。<br>来源：<a href="https://huggingface.co/spaces/zama-fhe/encrypted_sentiment_analysis">Zama FHE Space</a> · <a href="https://github.com/zama-ai/concrete-ml">Concrete-ML</a>。本页面为第三方演示接入页，非独立部署的计算服务。</footer>
+</main>
+</html>

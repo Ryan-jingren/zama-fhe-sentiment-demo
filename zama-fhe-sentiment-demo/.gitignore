@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+**/.fhe_keys/
+**/tmp/*
+source-import-staging/
