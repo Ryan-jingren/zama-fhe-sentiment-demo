@@ -1,0 +1,83 @@
+{
+  "source": "https://huggingface.co/spaces/zama-fhe/encrypted_sentiment_analysis",
+  "revision": "5328edf819e165e80f6419741b54fa8297dfc2b9",
+  "excluded": [
+    ".fhe_keys/",
+    "tmp/",
+    "Git metadata",
+    "notebook outputs"
+  ],
+  "hash_note": "SHA-256 values describe downloaded originals before notebook output removal",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1640,
+      "sha256": "f721a48642856bc1ebab97c74f3cf6446fd39ce915e8f9a5c5cf358f868fde0f"
+    },
+    {
+      "path": "SentimentClassification.ipynb",
+      "bytes": 53712,
+      "sha256": "0007e238e00fc0b28c8dcb7c79ec388276880a6c56149b3c44c0a2bc8a6e6399"
+    },
+    {
+      "path": "app.py",
+      "bytes": 11436,
+      "sha256": "7479ae756cb443146a5167584abd702e3c1702df1778dc2c7704f253028526e4"
+    },
+    {
+      "path": "compile.py",
+      "bytes": 829,
+      "sha256": "0fb72ffaef91369d8ab57b89677dd325b7675df2955f98c182e3350276b1ffcc"
+    },
+    {
+      "path": "deployment/samples_for_compilation.csv",
+      "bytes": 860498,
+      "sha256": "f0aed97d4b5972e7dc101a222dda09ee4b35a04b4290ab6c3f6984dd9da10b2c"
+    },
+    {
+      "path": "deployment/sentiment_fhe_model/client.zip",
+      "bytes": 3887326,
+      "sha256": "fbde0af1d92d5c2b2e42d8d439ae75328773dac591826559fbc2043356c22388"
+    },
+    {
+      "path": "deployment/sentiment_fhe_model/server.zip",
+      "bytes": 3004,
+      "sha256": "e6ab63f4cae95dd9c418df05b0041d567f485ae16ae84f02068165b3df659baf"
+    },
+    {
+      "path": "deployment/sentiment_fhe_model/versions.json",
+      "bytes": 71,
+      "sha256": "cbea8cb8cdb2a3d8e885f0929df90b4cb5719fa06c9b3e1120d13fb77d91bb0c"
+    },
+    {
+      "path": "deployment/serialized_model",
+      "bytes": 6022285,
+      "sha256": "8f011ecc35365ed1b16484ff1f73df02936e6011659b8587431213146d6b8e57"
+    },
+    {
+      "path": "download_data.sh",
+      "bytes": 527,
+      "sha256": "a7eaf362851b3380a3264d756c833a6e0dcf947b61ac13e8deb720322c1c2f60"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 77,
+      "sha256": "ed2797a1d00367320957d95912deca892d794dfb7a439a4d770421e142c1eb06"
+    },
+    {
+      "path": "sentiment_analysis_banner.png",
+      "bytes": 176595,
+      "sha256": "b3bd1572a55db94b5e0594686e97f10d60586cfe211550a7ec154dcc81364978"
+    },
+    {
+      "path": "server.py",
+      "bytes": 1059,
+      "sha256": "d04c1f201ad683b876a1b24d5bb9faef57c1310702555e04c1c96287f90cf621"
+    },
+    {
+      "path": "transformer_vectorizer.py",
+      "bytes": 2380,
+      "sha256": "874662426f77487edd4c3ce59b558628d9db9e112e9eab5132f136d1d73e9ccc"
+    }
+  ]
+}
